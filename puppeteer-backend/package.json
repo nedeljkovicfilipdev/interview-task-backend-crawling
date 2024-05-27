@@ -1,0 +1,22 @@
+{
+    "name": "puppeteer-backend",
+    "version": "1.0.0",
+    "description": "Integrating puppeteer library into nodejs project",
+    "main": "server.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "server": "nodemon server.js"
+    },
+    "author": "Filip Nedeljkovic",
+    "license": "ISC",
+    "dependencies": {
+        "ajv": "^8.14.0",
+        "cors": "^2.8.5",
+        "dotenv": "^16.4.5",
+        "express": "^4.18.3",
+        "express-async-handler": "^1.1.4",
+        "puppeteer": "^22.10.0",
+        "puppeteer-extra": "^3.3.6",
+        "puppeteer-extra-plugin-stealth": "^2.11.2"
+    }
+}
