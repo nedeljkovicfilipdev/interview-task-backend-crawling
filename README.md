@@ -1,6 +1,16 @@
 # interview-task-backend-crawling
 Web Data Extraction for Specific Product Data
 
+Installation:
+
+Backend: 
+*npm i
+*npm run server
+
+Frontend:
+*npm i
+*npm run dev
+
 Tech Stack:
 
 -NodeJS -React, Typescript
