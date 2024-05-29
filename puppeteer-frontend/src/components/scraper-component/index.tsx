@@ -1,22 +1,29 @@
-import { useEffect, useState } from "react"
+import { useEffect, useState } from "react";
 import axios from 'axios';
 
-export const  ScraperComponent = () => {
-
-    const [state, setState] = useState()
+export const ScraperComponent = () => {
+    const [state, setState] = useState(null);
 
     const handleScraper = async () => {
-        const response = await axios.get('http://localhost:4000/idealo/getProducts')
-        console.log(response)
+        try {
+            const response = await axios.get('http://localhost:4000/idealo/getProducts');
+            setState(response.data);
+        } catch (error) {
+            console.error("Error fetching data:", error);
+        }
     }
 
     useEffect(() => {
-        handleScraper()
-    }, [])
+        handleScraper();
+    }, []);
 
-    return(
+    return (
         <div>
-            
+            {state ? (
+                <pre>{JSON.stringify(state, null, 2)}</pre>
+            ) : (
+                <p>Loading...</p>
+            )}
         </div>
-    )
+    );
 }

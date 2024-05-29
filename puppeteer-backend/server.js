@@ -21,7 +21,7 @@ app.use(cors(corsOptions))
 app.use(requestHandler)
 
 //PORTS
-app.listen(process.env.PORT)
+app.listen(4000)
 console.log("PORT ? ", process.env.PORT)
 
 //Routes
