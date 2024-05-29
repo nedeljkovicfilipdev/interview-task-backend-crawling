@@ -81,6 +81,7 @@ do {
     }
 
     await browser.close();
+    return products
 }
 
 module.exports = {
