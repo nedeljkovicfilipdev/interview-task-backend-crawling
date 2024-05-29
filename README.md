@@ -5,6 +5,7 @@ Installation:
 
 Backend: 
 *npm i
+*Set port in server.js to 4000 if needed
 *npm run server
 
 Frontend:
